@@ -1,0 +1,3 @@
+packages:
+  - 'xconfess-backend'
+  - 'xconfess-frontend'

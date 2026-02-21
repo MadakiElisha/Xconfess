@@ -6,9 +6,9 @@
     "xconfess-frontend"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace=xconfess-backend\" \"npm run dev --workspace=xconfess-frontend\"",
-    "dev:backend": "npm run dev --workspace=xconfess-backend",
-    "dev:frontend": "npm run dev --workspace=xconfess-frontend"
+    "dev": "concurrently \"pnpm run dev --filter xconfess-backend\" \"pnpm run dev --filter xconfess-frontend\"",
+    "dev:backend": "pnpm run dev --filter xconfess-backend",
+    "dev:frontend": "pnpm run dev --filter xconfess-frontend"
   },
   "dependencies": {
     "@faker-js/faker": "^10.2.0",
